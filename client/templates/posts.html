@@ -1,35 +1,44 @@
 <template name="postsList">
-    <!-- Right side column. Contains the navbar and content of the page -->
-    <aside class="right-side">
-        <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <h1>
-                Posts
-                <small></small>
-            </h1>
-            <ol class="breadcrumb">
-                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                <li class="active">Posts</li>
-            </ol>
-        </section>
+	<!-- Right side column. Contains the navbar and content of the page -->
+	<aside class="right-side">
+		<!-- Content Header (Page header) -->
+		<section class="content-header">
+			<h1>
+				Posts
+				<small></small>
+			</h1>
+			<ol class="breadcrumb">
+				<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+				<li class="active">Posts</li>
+			</ol>
+		</section>
 
-        <!-- Main content -->
-        <section class="content">
+		<!-- Main content -->
+		<section class="content">
 
-            <div class="posts">
-            	{{#each posts}}
-            	{{> postItem}}
-            	{{/each}}
-            </div>
-
-        </section><!-- /.content -->
-    </aside><!-- /.right-side -->
+			<div class="box box-primary">
+				<div class="box-body">
+					<ul class="todo-list">
+						{{#each posts}}
+						{{> postItem}}
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+		</section><!-- /.content -->
+	</aside><!-- /.right-side -->
 </template>
 
 <template name="postItem">
-	<div class="post">
-		<div class="post-content">
-			<h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>		
+	<li>
+		<!-- todo text -->
+		<span class="text">
+			<a href="{{url}}">{{title}}</a>
+		</span>
+		<!-- General tools such as edit or delete-->
+		<div class="tools">
+			<i class="fa fa-edit"></i>
+			<i class="fa fa-trash-o"></i>
 		</div>
-	</div>
+	</li>
 </template>
