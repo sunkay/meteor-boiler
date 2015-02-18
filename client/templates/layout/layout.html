@@ -11,7 +11,7 @@
 <template name="header">
 	<!-- header logo: style can be found in header.less -->
 	<header class="header">
-		<a href="{{pathFor 'blankTemplate'}}" class="logo">
+		<a href="{{pathFor 'postsList'}}" class="logo">
 			<!-- Add the class icon to your logo image or logo icon to add the margining -->
 			SunTheme
 		</a>
@@ -25,6 +25,12 @@
 				<span class="icon-bar"></span>
 			</a>
 			<div class="navbar-right">
+				<ul class="nav navbar-nav">
+					<li class="dropdown user user-menu">
+						{{> atNavButton}}
+					</li>
+					<li>&nbsp;&nbsp;</li>
+				</ul>
 			</div>
 		</nav>
 	</header>
@@ -59,8 +65,8 @@
 			<!-- sidebar menu: : style can be found in sidebar.less -->
 			<ul class="sidebar-menu">
 				<li class="active">
-					<a href="index.html">
-						<i class="fa fa-dashboard"></i> <span>Dashboard</span>
+					<a href="{{pathFor 'blankTemplate'}}">
+						<i class="fa fa-dashboard"></i> <span>Blank Template</span>
 					</a>
 				</li>
 				<li>
