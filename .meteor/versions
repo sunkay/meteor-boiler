@@ -1,5 +1,6 @@
 accounts-base@1.1.3
 accounts-password@1.0.6
+amplify@1.0.0
 application-configuration@1.0.4
 autoupdate@1.1.5
 base64@1.0.2
@@ -49,6 +50,8 @@ natestrauser:font-awesome@4.3.0
 npm-bcrypt@0.7.7
 observe-sequence@1.0.4
 ordered-dict@1.0.2
+practicalmeteor:chai@1.9.2_3
+practicalmeteor:loglevel@1.1.0_3
 random@1.0.2
 reactive-dict@1.0.5
 reactive-var@1.0.4
@@ -70,5 +73,12 @@ underscore@1.0.2
 url@1.0.3
 useraccounts:bootstrap@1.7.1
 useraccounts:core@1.7.1
+velocity:core@0.4.5
+velocity:html-reporter@0.4.1
+velocity:node-soft-mirror@0.2.8
+velocity:shim@0.1.0
+velocity:test-proxy@0.0.4
 webapp@1.1.6
 webapp-hashing@1.0.2
+xolvio:cucumber@0.3.9
+xolvio:webdriver@0.2.5
