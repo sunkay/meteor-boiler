@@ -1,0 +1,47 @@
+(function () {
+
+  'use strict';
+  //if(Meteor.isClient){
+  if (Meteor.isClient || !process.env.IS_MIRROR) {
+    return;
+  }
+
+  Meteor.startup(function () {
+    _clearState();
+    //_insertPosts();
+  });
+
+  Meteor.methods({
+    'clearState': _clearState
+  });
+
+  function _clearState () {
+    Posts.remove({});
+    _insertPosts();
+  }
+
+  function _insertPosts () {
+    Posts.insert({
+      title: 'Introducing Telescope',
+      url: 'http://sachagreif.com/introducing-telescope/'
+    });
+    Posts.insert({
+      title: 'Meteor',
+      url: 'http://meteor.com'
+    });
+  }
+
+  function _createJsonServerRoute (route, object) {
+    Router.route(route, function () {
+      this.response.writeHead(200, {
+        'Content-Type': 'application/json; charset=utf-8'
+      });
+      if (typeof object === 'function') {
+        this.response.end(JSON.stringify(object()));
+      } else {
+        this.response.end(JSON.stringify(object));
+      }
+    }, {where: 'server'});
+  }
+
+})();

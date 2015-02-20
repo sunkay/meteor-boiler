@@ -18,6 +18,16 @@
 	   callback();
 	});
 
+	this.Then(/^I should see (\d+) posts$/, function (numPosts, callback) {
+      helper.world.browser.
+    	elements(".postItem", function(err, res){
+    		assert.equal(res.value.length, numPosts);
+    		console.log(res.value.length);
+    	});    
+
+      callback();
+    });
+
   };
 
 })();
