@@ -17,7 +17,7 @@
   function _clearState () {
     Posts.remove({});
     _insertPosts();
-    _insertUser();
+    //_insertUser();
   }
 
   function _insertUser(){

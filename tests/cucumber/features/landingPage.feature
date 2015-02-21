@@ -5,16 +5,17 @@ Feature: Landing Page works as expeted
 
   Scenario: I am able to login
   	Given I am on the home page
+    And I am not authenticated
   	When I navigate to "/"
   	Then I should see the button "Sign In"
 
-  Scenario: Add a post
-  	Given I am on the home page
-  	When I navigate to "/"
-  	Then I should see 2 posts
-
   Scenario: Authenticated users should see a Sign Out button
     Given I am on the home page
+    And I am registered
     And I am authenticated
-    When I navigate to "/"
     Then I should see a "Sign Out" button 
+
+  Scenario: Add a post
+    Given I am on the home page
+    When I navigate to "/"
+    Then I should see 2 posts
