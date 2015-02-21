@@ -8,7 +8,6 @@
 
   Meteor.startup(function () {
     _clearState();
-    //_insertPosts();
   });
 
   Meteor.methods({
@@ -18,6 +17,13 @@
   function _clearState () {
     Posts.remove({});
     _insertPosts();
+    _insertUser();
+  }
+
+  function _insertUser(){
+    Accounts.createUser({username: 'sunil', 
+      email: 'sunil@y.com',
+      password: 'sunil123'});
   }
 
   function _insertPosts () {

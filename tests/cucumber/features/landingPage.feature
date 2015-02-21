@@ -12,3 +12,9 @@ Feature: Landing Page works as expeted
   	Given I am on the home page
   	When I navigate to "/"
   	Then I should see 2 posts
+
+  Scenario: Authenticated users should see a Sign Out button
+    Given I am on the home page
+    And I am authenticated
+    When I navigate to "/"
+    Then I should see a "Sign Out" button 
