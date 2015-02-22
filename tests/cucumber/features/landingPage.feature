@@ -1,21 +1,19 @@
+#this feature is after a user logs in...
+@beforeHookLogin
 Feature: Landing Page works as expeted
+
   As a user
   I want the landing page to work as expected
   So that the site is secure and consumable for our users
 
-  Scenario: I am able to login
-  	Given I am on the home page
-    And I am not authenticated
-  	When I navigate to "/"
-  	Then I should see the button "Sign In"
-
-  Scenario: Authenticated users should see a Sign Out button
+  Scenario:
     Given I am on the home page
-    And I am registered
-    And I am authenticated
-    Then I should see a "Sign Out" button 
+    When I navigate to "/"
+    Then I should see the title of "SunTheme"
 
-  Scenario: Add a post
+  Scenario: Homepage has 2 posts
     Given I am on the home page
     When I navigate to "/"
     Then I should see 2 posts
+
+
