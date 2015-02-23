@@ -45,7 +45,7 @@ mizzao:bootstrap-3@3.3.1_1
 mobile-status-bar@1.0.2
 mongo@1.0.11
 mrt:trail@0.1.2
-msavin:mongol@0.2.1
+msavin:mongol@0.2.3
 natestrauser:font-awesome@4.3.0
 npm-bcrypt@0.7.7
 observe-sequence@1.0.4
@@ -71,8 +71,8 @@ tracker@1.0.5
 ui@1.0.5
 underscore@1.0.2
 url@1.0.3
-useraccounts:bootstrap@1.7.1
-useraccounts:core@1.7.1
+useraccounts:bootstrap@1.8.1
+useraccounts:core@1.8.1
 velocity:core@0.4.5
 velocity:html-reporter@0.4.1
 velocity:node-soft-mirror@0.2.8
