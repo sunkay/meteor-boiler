@@ -1,32 +1,13 @@
 <template name="postsList">
-	<!-- Right side column. Contains the navbar and content of the page -->
-	<aside class="right-side">
-		<!-- Content Header (Page header) -->
-		<section class="content-header">
-			<h1>
-				Posts
-				<small></small>
-			</h1>
-			<ol class="breadcrumb">
-				<li><a href="{{pathFor 'postsList'}}"><i class="fa fa-dashboard"></i> Home</a></li>
-				<li class="active">Posts</li>
-			</ol>
-		</section>
 
-		<!-- Main content -->
-		<section class="content">
+	{{#contentHeader heading="Posts" currentPage="Posts"}}
+		<ul class="todo-list">
+			{{#each posts}}
+			{{> postItem}}
+			{{/each}}
+		</ul>
+	{{/contentHeader}}
 
-			<div class="box box-primary">
-				<div class="box-body">
-					<ul class="todo-list">
-						{{#each posts}}
-						{{> postItem}}
-						{{/each}}
-					</ul>
-				</div>
-			</div>
-		</section><!-- /.content -->
-	</aside><!-- /.right-side -->
 </template>
 
 <template name="postItem">

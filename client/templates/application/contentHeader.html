@@ -3,12 +3,14 @@
 		<!-- Content Header (Page header) -->
 		<section class="content-header">
 			<h1>
-				Warning
-				<small></small>
+				{{this.heading}}
+				<small>{{this.smallHeading}}</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="{{pathFor 'postsList'}}"><i class="fa fa-dashboard"></i> Home</a></li>
+				<li class="active">{{this.currentPage}}</li>
 			</ol>
+			<!--TODO: need to expand breadcrumb functionality -->
 		</section>
 
 		<!-- Main content -->
@@ -16,14 +18,9 @@
 
 			<div class="box box-primary">
 				<div class="box-body">
-					<div class="not-found jumbotron">
-						<h2>404</h2>
-						<p>Sorry, we couldn't find a page at this address.</p>
-					</div>
+					{{> UI.contentBlock}}
 				</div>
 			</div>
 		</section><!-- /.content -->
 	</aside><!-- /.right-side -->
-
-
 </template>

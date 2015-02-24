@@ -1,29 +1,8 @@
 <template name="404">
-	<aside class="right-side">
-		<!-- Content Header (Page header) -->
-		<section class="content-header">
-			<h1>
-				Warning
-				<small></small>
-			</h1>
-			<ol class="breadcrumb">
-				<li><a href="{{pathFor 'postsList'}}"><i class="fa fa-dashboard"></i> Home</a></li>
-			</ol>
-		</section>
-
-		<!-- Main content -->
-		<section class="content">
-
-			<div class="box box-primary">
-				<div class="box-body">
-					<div class="not-found jumbotron">
-						<h2>404</h2>
-						<p>Sorry, we couldn't find a page at this address.</p>
-					</div>
-				</div>
-			</div>
-		</section><!-- /.content -->
-	</aside><!-- /.right-side -->
-
-
+	{{#contentHeader heading="Warning" currentPage="404"}}
+		<div class="not-found jumbotron">
+			<h2>404</h2>
+			<p>Sorry, we couldn't find a page at this address.</p>
+		</div>
+	{{/contentHeader}}
 </template>
