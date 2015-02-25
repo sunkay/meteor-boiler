@@ -23,7 +23,7 @@ FlashMessages
 
 Security:
 	audit-argument-checks
+	Browser Policy 
 	checks in Meteor methods
-	Browser Policy (TODO)
-	ongoworks:security
+	ongoworks:security (todo)
 	
