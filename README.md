@@ -18,3 +18,11 @@ Testing:
 
 UserAccounts
 
+Collection2 & AutoForm
+
+Security:
+	audit-argument-checks
+	checks in Meteor methods
+	Browser Policy (TODO)
+	ongoworks:security
+	
