@@ -17,8 +17,9 @@ Testing:
 	Browser-based end-to-end testing with velocity, cucumber & webdriver.io
 
 UserAccounts
-
-Collection2 & AutoForm
+Collection2 
+AutoForm
+FlashMessages
 
 Security:
 	audit-argument-checks

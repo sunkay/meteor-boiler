@@ -49,6 +49,8 @@ mizzao:bootstrap-3@3.3.1_1
 mobile-status-bar@1.0.2
 momentjs:moment@2.8.4
 mongo@1.0.11
+mongo-livedata@1.0.7
+mrt:flash-messages@1.0.0
 mrt:trail@0.1.2
 msavin:mongol@0.2.3
 natestrauser:font-awesome@4.3.0
