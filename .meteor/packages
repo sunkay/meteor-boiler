@@ -16,3 +16,5 @@ accounts-password
 xolvio:cucumber
 useraccounts:bootstrap
 msavin:mongol
+aldeed:collection2
+aldeed:autoform

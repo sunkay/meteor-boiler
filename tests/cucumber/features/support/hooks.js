@@ -22,6 +22,7 @@
      * before function to always ensure the user is logged in
      */
     this.Before("@beforeHookLogin", function(callback){
+      console.log(arguments);
       console.log("start @beforeHookLogin");
       //always signout before sigingin in
       helper.world.browser.
