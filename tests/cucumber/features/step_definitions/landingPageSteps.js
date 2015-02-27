@@ -58,6 +58,22 @@
         });
     });
 
+    this.When(/^I submit a new post$/, function (callback) {
+      console.log("When: I submit a new post");
+      helper.world.browser.
+        pause(500).
+        saveScreenshot(process.env.PWD + '/newPost.png').
+        waitForExist("#newPost").
+        waitForVisible("#newPost").
+        setValue("[name='title']", 'Title Test').
+        setValue("[name='url']", 'http://testurl.com').
+        saveScreenshot(process.env.PWD + '/newPost.png').
+        submitForm('#newPost').
+        pause(200);
+
+      callback();
+    });
+
 /*
     this.Given(/^I am registered$/, function (callback) {
       console.log("Given: I am registered ");

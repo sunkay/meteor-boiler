@@ -1,0 +1,8 @@
+<template name="editPost">
+
+	{{#contentHeader heading="Edit Post" currentPage="Edit Post"}}
+		{{> quickForm collection="Posts" doc=this id="editPost" 
+			type="method" meteormethod="editPost"}}
+	{{/contentHeader}}
+
+</template>

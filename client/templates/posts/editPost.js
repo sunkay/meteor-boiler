@@ -1,9 +1,13 @@
 // adding autoform hooks to manage errors and validations
 
 AutoForm.hooks({
-	newPost: {
+	editPost: {
 		before: {
+			editPost: function(doc, template){
+				var post = doc;
 
+				return post;
+			}
 		},
 		onError: function(operation, error, template){
 			// show an error message to the user
@@ -12,7 +16,7 @@ AutoForm.hooks({
 		},
 		onSuccess: function(operation, post, template){
 			// go to the post details page
-			Router.go('postPage', {_id:post._id});
+			Router.go('postsList');
 		}
 	}
 

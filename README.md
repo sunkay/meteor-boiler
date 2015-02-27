@@ -20,10 +20,20 @@ UserAccounts
 Collection2 
 AutoForm
 FlashMessages
+roles - todo
+user-admin - todo
 
 Security:
 	audit-argument-checks
-	Browser Policy 
+	Browser Policy d
 	checks in Meteor methods
+	sanitize-html (todo)
 	ongoworks:security (todo)
+
+CRUD
+   A pattern to do CRUD for collections as securely as possible
+   This pattern can be copied and adapted for more collections
+
+   
+
 	

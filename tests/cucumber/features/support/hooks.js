@@ -22,7 +22,7 @@
      * before function to always ensure the user is logged in
      */
     this.Before("@beforeHookLogin", function(callback){
-      console.log(arguments);
+      //console.log(arguments);
       console.log("start @beforeHookLogin");
       //always signout before sigingin in
       helper.world.browser.
@@ -39,7 +39,9 @@
         waitForVisible('.at-pwd-form').
         setValue('#at-field-email', 'sunil@y.com').
         setValue('#at-field-password', 'sunil123').
-        click('#at-btn');
+        click('#at-btn').
+        pause(200).
+        saveScreenshot(process.env.PWD + '/signedIn.png');
         
       console.log("End @beforeHookLogin");
 
@@ -57,7 +59,8 @@
         url(helper.world.cucumber.mirror.rootUrl).
         waitForExist('#at-nav-button').
         waitForVisible('#at-nav-button').
-        click('#at-nav-button');
+        click('#at-nav-button').
+        pause(200);
 
       console.log("end @beforeHookLogout");
 

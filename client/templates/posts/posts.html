@@ -16,11 +16,22 @@
 		<span class="text postItem">
 			<a href="{{url}}">{{title}}</a>
 		</span>
+
 		<!-- General tools such as edit or delete-->
-		<div class="tools">
-			<a href="{{pathFor 'postPage'}}" class="viewPost"><i class="fa fa-info"></i></a>
-			<i class="fa fa-edit"></i>
-			<i class="fa fa-trash-o"></i>
+		<div class="pull-right box-tools">
+
+	         <a class="postPage btn btn-primary btn-sm pull-right"  style="	margin-right: 5px;" href="{{pathFor 'postPage'}}">
+	         	<i class="fa fa-info"></i>
+	         </a>	
+	
+	         <a class="editPost btn btn-primary btn-sm pull-right"  style="	margin-right: 5px;" href="{{pathFor 'editPost' }}">
+	         	<i class="fa fa-edit"></i>
+	         </a>	
+	
+	         <a class="deletePost btn btn-primary btn-sm pull-right" style="	margin-right: 5px;">
+	         	<i class="fa fa-trash"></i>
+	         </a>
+
 		</div>
 	</li>
 </template>

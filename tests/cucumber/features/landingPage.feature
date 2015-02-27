@@ -16,4 +16,8 @@ Feature: Landing Page works as expeted
     When I navigate to "/"
     Then I should see 2 posts
 
-
+  Scenario: Add a new post
+    When I navigate to "newPost"
+    And I submit a new post
+    And I navigate to "/"
+    Then I should see 3 posts
