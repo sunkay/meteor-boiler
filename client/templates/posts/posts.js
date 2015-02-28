@@ -9,16 +9,24 @@ Template.postItem.events({
 		e.preventDefault();
 
 		var post = this;
-		
-		Router.go("/");
-		Meteor.call('deletePostById', post._id, 
-			function (error) {
-				if(error){
-					console.log(error);
-					FlashMessages.sendError(error.reason);
-				} else {
-					FlashMessages.sendSuccess("Post has been deleted");
-				}
-			});
+		bootbox.confirm("Are you sure?", function(result){
+			if(!result){
+				FlashMessages.sendSuccess("Whew!! not deleted :-)");
+				return;
+			}
+
+			Meteor.call('deletePostById', post._id, 
+				function (error) {
+					if(error){
+						console.log(error);
+						FlashMessages.sendError(error.reason);
+					} else {
+						FlashMessages.sendSuccess("Post has been deleted");
+					}
+				});
+
+
+			Router.go("/");
+		});		
 	}
 });
