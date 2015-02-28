@@ -23,3 +23,11 @@ Feature: Landing Page works as expeted
     And I navigate to "/"
     Then I should see 3 posts
     And I should delete the new post
+
+  Scenario: Edit a post
+    Given I am logged in
+    And I navigate to "/"
+    When I click on edit post
+    And I edit a post
+    Then I should see edited post
+

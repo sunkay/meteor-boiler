@@ -81,5 +81,46 @@
 
       callback();
     });
+
+   this.When(/^I click on edit post$/, function (callback) {
+      console.log("When: I click on edit post");
+      helper.world.browser.
+        waitForExist(".editPost").
+        waitForVisible(".editPost").
+        click('.editPost').
+        pause(100);
+
+      callback();
+   });
+
+   this.When(/^I edit a post$/, function (callback) {
+      console.log("When: I edit a  post");
+      helper.world.browser.
+        waitForExist("#editPost").
+        waitForVisible("#editPost").
+        setValue("[name='title']", 'EDITED').
+        setValue("[name='url']", 'http://testurl.com').
+        submitForm('#editPost').
+        pause(100);
+
+      callback();
+   });
+  
+   this.Then(/^I should see edited post$/, function (callback) {
+      console.log("Then: I should see edited post");
+
+      helper.world.browser.
+        waitForExist(".postItem").
+        waitForVisible(".postItem").
+        getText(".postItem", function(err, res){
+          //console.log(res);
+          assert.equal(res[0], "EDITED");
+        }).
+        pause(100);
+
+      callback();
+   });
+
+
   };
 })();
