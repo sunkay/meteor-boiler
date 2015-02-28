@@ -61,6 +61,7 @@
     this.When(/^I submit a new post$/, function (callback) {
       console.log("When: I submit a new post");
       helper.world.browser.
+        pause(100).
         waitForExist("#newPost").
         waitForVisible("#newPost").
         setValue("[name='title']", 'Title Test').
