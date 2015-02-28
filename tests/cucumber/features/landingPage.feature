@@ -17,7 +17,9 @@ Feature: Landing Page works as expeted
     Then I should see 2 posts
 
   Scenario: Add a new post
+    Given I am logged in
     When I navigate to "newPost"
     And I submit a new post
     And I navigate to "/"
     Then I should see 3 posts
+    And I should delete the new post

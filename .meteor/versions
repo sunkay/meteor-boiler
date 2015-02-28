@@ -19,6 +19,7 @@ browser-policy-framing@1.0.3
 callback-hook@1.0.2
 check@1.0.4
 coffeescript@1.0.5
+dburles:mongo-collection-instances@0.3.1
 ddp@1.0.14
 deps@1.0.6
 ejson@1.0.5
@@ -56,7 +57,7 @@ mongo@1.0.11
 mongo-livedata@1.0.7
 mrt:flash-messages@1.0.0
 mrt:trail@0.1.2
-msavin:mongol@0.2.3
+msavin:mongol@0.5.3
 natestrauser:font-awesome@4.3.0
 npm-bcrypt@0.7.7
 observe-sequence@1.0.4
@@ -86,10 +87,10 @@ useraccounts:bootstrap@1.8.1
 useraccounts:core@1.8.1
 velocity:core@0.4.5
 velocity:html-reporter@0.4.1
-velocity:node-soft-mirror@0.2.8
+velocity:node-soft-mirror@0.3.1
 velocity:shim@0.1.0
 velocity:test-proxy@0.0.4
 webapp@1.1.6
 webapp-hashing@1.0.2
-xolvio:cucumber@0.3.9
-xolvio:webdriver@0.2.5
+xolvio:cucumber@0.5.1
+xolvio:webdriver@0.3.1
