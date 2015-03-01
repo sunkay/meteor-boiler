@@ -13,7 +13,7 @@
 
 
     this.Given(/^I am logged out$/, function (callback) {
-      console.log("Given: I am logged out ");
+      log.info("Given: I am logged out ");
       //always signout before sigingin in
       helper.world.browser.
       url(helper.world.cucumber.mirror.rootUrl).
@@ -26,7 +26,7 @@
     });
 
     this.Given(/^I am logged in$/, function (callback) {
-      console.log("Given: I am logged in ");
+      log.info("Given: I am logged in ");
 
       //always signout before sigingin in
       helper.world.browser.
@@ -34,7 +34,7 @@
       waitForExist('#at-nav-button').
       waitForVisible('#at-nav-button').
       click('#at-nav-button').
-      pause(100);
+      pause(250);
 
 /*
       helper.world.browser.addCommand('authenticateUser', function (email, password) {
@@ -65,7 +65,7 @@
 
  this.Then(/^I should see a "([^"]*)" form$/, 
   function (title, callback) {
-    console.log("Then: I should see sign in form ");
+    log.info("Then: I should see sign in form ");
 
     helper.world.browser.
     waitForExist('.at-title').      

@@ -8,7 +8,6 @@ meteor-platform
 mizzao:bootstrap-3
 underscore
 less
-mrt:trail
 iron:router
 natestrauser:font-awesome
 sacha:spin
@@ -22,3 +21,4 @@ audit-argument-checks
 mrt:flash-messages
 browser-policy
 mizzao:bootboxjs
+jag:pince

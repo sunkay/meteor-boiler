@@ -1,3 +1,4 @@
+
 Template.postsList.helpers({
 	posts: function(){
 		return Posts.find();
@@ -7,6 +8,8 @@ Template.postsList.helpers({
 Template.postItem.events({
 	'click .deletePost': function(e){
 		e.preventDefault();
+
+		log.info("In Delete Post");
 
 		var post = this;
 		bootbox.confirm("Are you sure?", function(result){
@@ -18,7 +21,7 @@ Template.postItem.events({
 			Meteor.call('deletePostById', post._id, 
 				function (error) {
 					if(error){
-						console.log(error);
+						log.error(error);
 						FlashMessages.sendError(error.reason);
 					} else {
 						FlashMessages.sendSuccess("Post has been deleted");

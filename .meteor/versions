@@ -39,6 +39,7 @@ iron:location@1.0.7
 iron:middleware-stack@1.0.7
 iron:router@1.0.7
 iron:url@1.0.7
+jag:pince@0.0.6
 jquery@1.11.3
 json@1.0.2
 launch-screen@1.0.1
@@ -57,7 +58,6 @@ momentjs:moment@2.8.4
 mongo@1.0.11
 mongo-livedata@1.0.7
 mrt:flash-messages@1.0.0
-mrt:trail@0.1.2
 msavin:mongol@0.5.3
 natestrauser:font-awesome@4.3.0
 npm-bcrypt@0.7.7
