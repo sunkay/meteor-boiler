@@ -38,7 +38,7 @@
     }
 
     // Box header
-    .box-header {
+    .box-header, .box-row {
         position: relative;
         .clearfix();
         //Add top left and top right border radius
@@ -66,6 +66,34 @@
         }
 
 
+    }
+
+    .box-row {
+        position: relative;
+        .clearfix();
+        //Add top left and top right border radius
+        .border-radius(@box-border-radius; @box-border-radius; 0; 0);
+        border-bottom: 0px solid @box-border-color;
+        color: #444;        
+        // Icons and box title
+        > .fa, > .glyphicon, > .ion,
+        .box-title {
+            display: inline-block;
+            padding: 5px 5px 5px 5px;
+            margin: 0;
+            font-size: 20px;
+            font-weight: 400;
+            float: left;
+            cursor: default;
+            //text-transform: capitalize;
+        }
+        a {
+            color: #444;
+        }
+        // Box Tools
+        > .box-tools {
+            padding: 5px 10px 5px 5px;
+        }
     }
 
     // Box body
@@ -233,7 +261,7 @@
         // Todo list element
         > li {
             .border-radius(2px);
-            padding: 10px;
+            padding: @list-padding;
             background: @table-striped-color;
             margin-bottom: 2px;
             border-left: 2px solid #e6e7e8;
