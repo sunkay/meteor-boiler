@@ -2,6 +2,9 @@ Simple Meteor Boilerplate
 
 This meteor boilerplate is coming out of my frustrations in coming with a good theme that is responsive and works as soon as you clone it. 
 
+Roadmap: [meteor boiler @ trello][trello]
+Demo: TBD
+
 This boilerplate uses the following themes and packages. 
 
 Theme: AdminLTE
@@ -34,6 +37,7 @@ CRUD
    A pattern to do CRUD for collections as securely as possible
    This pattern can be copied and adapted for more collections
 
-   
+[trello]: https://trello.com/b/grrlZ9pd/meteor-boilerplate
+
 
 	
