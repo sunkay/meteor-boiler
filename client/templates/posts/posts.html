@@ -1,37 +1,39 @@
 <template name="postsList">
 
 	{{#contentHeader heading="Posts" currentPage="Posts"}}
-		<ul class="todo-list">
-			{{#each posts}}
-			{{> postItem}}
-			{{/each}}
-		</ul>
+	<ul class="todo-list">
+		{{#each posts}}
+		{{> postItem}}
+		{{/each}}
+	</ul>
 	{{/contentHeader}}
 
 </template>
 
 <template name="postItem">
 	<li>
-		<!-- todo text -->
-		<span class="text postItem">
-			<a class="postURL" href="{{url}}">{{title}}</a>
-		</span>
+		<div class="box-header">
+			<!-- todo text -->
+			<span class="text postItem">
+				<a class="postURL" href="{{url}}">{{title}}</a>
+			</span>
 
-		<!-- General tools such as edit or delete-->
-		<div class="pull-right box-tools">
+			<!-- General tools such as edit or delete-->
+			<div class="pull-right box-tools">
 
-	         <a class="postPage btn btn-primary btn-sm pull-right"  style="	margin-right: 5px;" href="{{pathFor 'postPage'}}">
-	         	<i class="fa fa-info"></i>
-	         </a>	
-	
-	         <a class="editPost btn btn-primary btn-sm pull-right"  style="	margin-right: 5px;" href="{{pathFor 'editPost' }}">
-	         	<i class="fa fa-edit"></i>
-	         </a>	
-	
-	         <a class="deletePost btn btn-primary btn-sm pull-right" style="	margin-right: 5px;">
-	         	<i class="fa fa-trash"></i>
-	         </a>
+			<a class="postPage btn btn-primary btn-sm pull-right"  style="	margin-right: 5px;" href="{{pathFor 'postPage'}}">
+					<i class="fa fa-info"></i>
+				</a>	
 
+				<a class="editPost btn btn-primary btn-sm pull-right"  style="	margin-right: 5px;" href="{{pathFor 'editPost' }}">
+					<i class="fa fa-edit"></i>
+				</a>	
+
+				<a class="deletePost btn btn-primary btn-sm pull-right" style="	margin-right: 5px;">
+					<i class="fa fa-trash"></i>
+				</a>
+
+			</div>
 		</div>
 	</li>
 </template>
