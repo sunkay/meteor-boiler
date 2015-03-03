@@ -7,6 +7,8 @@ Demo: [meteor-boiler][demo]
 
 This boilerplate uses the following themes and packages. 
 
+Pull Demo.. one line change...
+
 Theme: AdminLTE
 	- Provides a decent responsive bootstrap-3 theme 
 	- Boilerplate is tested for 3 breakpoints
