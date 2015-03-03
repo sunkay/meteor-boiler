@@ -3,7 +3,7 @@ Simple Meteor Boilerplate
 This meteor boilerplate is coming out of my frustrations in coming with a good theme that is responsive and works as soon as you clone it. 
 
 Roadmap: [meteor boiler @ trello][trello]
-Demo: TBD
+Demo: [meteor-boiler][demo]
 
 This boilerplate uses the following themes and packages. 
 
@@ -38,6 +38,6 @@ CRUD
    This pattern can be copied and adapted for more collections
 
 [trello]: https://trello.com/b/grrlZ9pd/meteor-boilerplate
-
+[demo]: http://meteor-boiler.meteor.com
 
 	
