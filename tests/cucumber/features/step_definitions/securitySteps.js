@@ -34,7 +34,7 @@
       waitForExist('#at-nav-button').
       waitForVisible('#at-nav-button').
       click('#at-nav-button').
-      pause(250);
+      pause(300);
 
 /*
       helper.world.browser.addCommand('authenticateUser', function (email, password) {
@@ -56,7 +56,7 @@
       setValue('#at-field-email', 'sunny@y.com').
       setValue('#at-field-password', 'sunny123').
       click('#at-btn').
-      pause(100);
+      pause(250);
 
       callback();
     });

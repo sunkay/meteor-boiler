@@ -15,6 +15,20 @@ if(Meteor.users.find().count() === 0){
         lastname: "dummy_LN"
       }
     });  
+
+  // create an admin user
+  admin_id = Accounts.createUser({
+    username: 'admin',
+    email : 'admin@y.com',
+    password : 'admin123',
+    profile  : {
+        //publicly visible fields like firstname goes here
+        firstname: "admin_FN",
+        lastname: "admin_LN"
+      }
+    });
+
+  Roles.addUsersToRoles(admin_id, 'admin');
 }
 
 
@@ -34,7 +48,7 @@ if (Posts.find().count() === 0) {
   Posts.insert({
     title: 'The Meteor Book',
     url: 'http://themeteorbook.com',
-    userId: user_id,
+    userId: 0,
     createdAt: new Date()
   }); 
 }
