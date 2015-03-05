@@ -1,60 +1,116 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
     <title>Meteor-boiler by sunkay</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
+
+    <header>
+      <div class="container">
         <h1>Meteor-boiler</h1>
-        <p>my meteor boilerplate with AdminLTE bootstrap theme, customized for meteor</p>
-        <p class="view"><a href="https://github.com/sunkay/meteor-boiler">View the Project on GitHub <small>sunkay/meteor-boiler</small></a></p>
-        <ul>
-          <li><a href="https://github.com/sunkay/meteor-boiler/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/sunkay/meteor-boiler/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/sunkay/meteor-boiler">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a id="simple-meteor-boilerplate" class="anchor" href="#simple-meteor-boilerplate" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple Meteor Boilerplate</h1>
+        <h2>my meteor boilerplate with AdminLTE bootstrap theme, customized for meteor</h2>
 
-<h3>
-<a id="this-meteor-boilerplate-is-coming-out-of-my-frustrations-in-coming-with-a-good-theme-that-is-responsive-and-works-as-soon-as-you-clone-it" class="anchor" href="#this-meteor-boilerplate-is-coming-out-of-my-frustrations-in-coming-with-a-good-theme-that-is-responsive-and-works-as-soon-as-you-clone-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>This meteor boilerplate is coming out of my frustrations in coming with a good theme that is responsive and works as soon as you clone it.</h3>
+        <section id="downloads">
+          <a href="https://github.com/sunkay/meteor-boiler/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/sunkay/meteor-boiler/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/sunkay/meteor-boiler" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
 
-<p>This <strong>boilerplate</strong> uses the following themes and packages. </p>
+    <div class="container">
+      <section id="main_content">
+        <p>Simple Meteor Boilerplate </p>
 
-<p><em><strong>Theme: AdminLTE</strong></em>
-    - Provides a decent <strong>responsive</strong> bootstrap-3 theme 
-    - Boilerplate is tested for 3 breakpoints</p>
+<p>This meteor boilerplate is coming out of my frustrations in coming with a good theme that is responsive and works as soon as you clone it. The main motivations are to have something sophesticated that is working straight out of the box, that can be customizable and has a robust set of patterns that can be mimiced for a larger undertaking. </p>
 
-<p><em><strong>Logging:</strong></em>
-    mrt:trail for logging</p>
+<p>The primary goals in priority order:</p>
 
-<p><em><strong>Testing:</strong></em>
-    ### Velocity &amp; Cucumberjs
-    The tests folder contains a set of examples, tags and hooks which allows for working through this from the ground up
-    Browser-based end-to-end testing with velocity, cucumber &amp; webdriver.io</p>
+<ul>
+<li>A good customizable theme</li>
+<li>Security</li>
+<li>Judicious use of key packages</li>
+<li>Working iOS &amp; Android containers</li>
+<li>Testing with Velocity &amp; Cucumberjs + patterns that can be followed</li>
+<li>Finally, everything should work out of the box </li>
+</ul>
 
-<p>UserAccounts</p>
+<p>To that end I have created a public roadmap for this on Trello. Shoot me an email or open an issue if it needs to be added to the roadmap.</p>
+
+<p>Roadmap: <a href="https://trello.com/b/grrlZ9pd/meteor-boilerplate">meteor boiler @ trello</a>
+Demo: <a href="http://meteor-boiler.meteor.com">meteor-boiler</a></p>
+
+<p>This boilerplate uses the following themes and packages. </p>
+
+<p>Theme AdminLTE:</p>
+
+<ul>
+<li>Provides a decent responsive bootstrap-3 theme </li>
+<li>Boilerplate is tested for 3 breakpoints</li>
+</ul>
+
+<p>Logging:</p>
+
+<ul>
+<li>Pince</li>
+</ul>
+
+<p>Testing:</p>
+
+<ul>
+<li>Velocity &amp; Cucumberjs</li>
+<li>The tests folder contains a set of examples, tags and hooks which allows   for working through this from the ground up</li>
+<li>Browser-based end-to-end testing with velocity, cucumber &amp; webdriver.io</li>
+</ul>
+
+<p>Integrated &amp; Tested Packages:</p>
+
+<ul>
+<li>UserAccounts</li>
+<li>Collection2 </li>
+<li>AutoForm</li>
+<li>FlashMessages</li>
+<li>roles - todo</li>
+<li>user-admin - todo</li>
+</ul>
+
+<p>Security:</p>
+
+<ul>
+<li>audit-argument-checks</li>
+<li>Browser Policy d</li>
+<li>checks in Meteor methods</li>
+<li>sanitize-html (todo)</li>
+<li>ongoworks:security (todo)</li>
+</ul>
+
+<p>CRUD</p>
+
+<ul>
+<li>A pattern to do CRUD for collections as securely as possible</li>
+<li>This pattern can be copied and adapted for more collections</li>
+</ul>
       </section>
     </div>
-    <footer>
-      <p>Project maintained by <a href="https://github.com/sunkay">sunkay</a></p>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-60402015-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
