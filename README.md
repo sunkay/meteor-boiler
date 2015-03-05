@@ -17,36 +17,36 @@ Demo: [meteor-boiler][demo]
 
 This boilerplate uses the following themes and packages. 
 
-Theme: AdminLTE
+Theme AdminLTE:
 	- Provides a decent responsive bootstrap-3 theme 
 	- Boilerplate is tested for 3 breakpoints
 
 Logging:
-	Pince
+	- Pince
 
 Testing:
-	Velocity & Cucumberjs
-	The tests folder contains a set of examples, tags and hooks which allows for working through this from the ground up
-	Browser-based end-to-end testing with velocity, cucumber & webdriver.io
+	- Velocity & Cucumberjs
+	- The tests folder contains a set of examples, tags and hooks which allows for working through this from the ground up
+	- Browser-based end-to-end testing with velocity, cucumber & webdriver.io
 
 Integrated & Tested Packages:
-	UserAccounts
-	Collection2 
-	AutoForm
-	FlashMessages
-	roles - todo
-	user-admin - todo
+	- UserAccounts
+	- Collection2 
+	- AutoForm
+	- FlashMessages
+	- roles - todo
+	- user-admin - todo
 
 Security:
-	audit-argument-checks
-	Browser Policy d
-	checks in Meteor methods
-	sanitize-html (todo)
-	ongoworks:security (todo)
+	- audit-argument-checks
+	- Browser Policy d
+	- checks in Meteor methods
+	- sanitize-html (todo)
+	- ongoworks:security (todo)
 
 CRUD
-   A pattern to do CRUD for collections as securely as possible
-   This pattern can be copied and adapted for more collections
+   - A pattern to do CRUD for collections as securely as possible
+   - This pattern can be copied and adapted for more collections
 
 [trello]: https://trello.com/b/grrlZ9pd/meteor-boilerplate
 [demo]: http://meteor-boiler.meteor.com
