@@ -29,10 +29,13 @@ if(Meteor.users.find().count() === 0){
     });
 
   Roles.addUsersToRoles(admin_id, 'admin');
+} else {
+  user_id = Meteor.users.findOne({"username": 'sunny'})._id;
+  console.log("test  "+user_id);
 }
 
 
-if (Posts.find().count() === 0) { 
+if (Posts.find().count() === 0) {  
   Posts.insert({
     title: 'Introducing Telescope',
     url: 'http://sachagreif.com/introducing-telescope/',
