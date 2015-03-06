@@ -13,5 +13,18 @@ Template.header.events({
             $('.left-side').toggleClass("collapse-left");
             $(".right-side").toggleClass("strech");
         }
-	}
+    }
+});
+
+//-------------------------------------------------
+// Collapse navbar after click on a navbar item
+//-------------------------------------------------
+ 
+Template.layout.events({
+    "click .sidebar": function(e){
+        $('.row-offcanvas').toggleClass('active');
+        $('.left-side').removeClass("collapse-left");
+        $(".right-side").removeClass("strech");
+        $('.row-offcanvas').toggleClass("relative");
+    }
 });
