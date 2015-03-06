@@ -12,8 +12,11 @@ The primary goals in priority order:
 
 To that end I have created a public roadmap for this on Trello. Shoot me an email or open an issue if it needs to be added to the roadmap.
 
-Roadmap: [meteor boiler @ trello][trello]
-Demo: [meteor-boiler][demo]
+Roadmap: 
+   [meteor boiler @ trello][trello]
+
+Demo: 
+   [meteor-boiler][demo]
 
 This boilerplate uses the following themes and packages. 
 
