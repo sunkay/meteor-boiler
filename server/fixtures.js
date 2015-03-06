@@ -11,8 +11,7 @@ if(Meteor.users.find().count() === 0){
     password : 'sunny123',
     profile  : {
         //publicly visible fields like firstname goes here
-        firstname: "dummy_FN",
-        lastname: "dummy_LN"
+        name: "dummy-name",
       }
     });  
 
@@ -23,8 +22,7 @@ if(Meteor.users.find().count() === 0){
     password : 'admin123',
     profile  : {
         //publicly visible fields like firstname goes here
-        firstname: "admin_FN",
-        lastname: "admin_LN"
+        name: "super",
       }
     });
 
