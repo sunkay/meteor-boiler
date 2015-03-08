@@ -1,0 +1,34 @@
+<template name="userList">
+
+	{{#contentHeader heading="Users" currentPage="Users"}}
+	<ul class="todo-list">
+		{{#each allusers}}
+		{{> userItem}}
+		{{/each}}
+	</ul>
+	{{/contentHeader}}
+
+</template>
+
+<template name="userItem">
+	<li>
+		<div class="box-row">
+			<!-- todo text -->
+			<span class="text userItem">
+				{{profile.name}}
+			</span>
+			<span class="label label-success">
+				{{_id}}
+			</span>
+
+			<!-- General tools such as edit or delete-->
+			<div class="pull-right box-tools">
+
+				<a class="deleteUser btn btn-primary btn-sm pull-right" style="	margin-right: 5px;">
+					<i class="fa fa-trash"></i>
+				</a>
+
+			</div>
+		</div>
+	</li>
+</template>
