@@ -1,2 +1,2 @@
 // client side only users collection
-UserList = new Mongo.Collection('userlist');
+UserList = new Mongo.Collection('allusers');
