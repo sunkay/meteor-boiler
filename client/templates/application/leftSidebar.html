@@ -36,11 +36,15 @@
 						<i class="fa fa-dashboard"></i> <span>Blank Template</span>
 					</a>
 				</li>
-				<li>
-					<a href="pages/widgets.html">
-						<i class="fa fa-th"></i> <span>Widgets</span> <small class="badge pull-right bg-green">new</small>
-					</a>
-				</li>
+				{{#if admin }}
+					<li>
+						<a href="{{pathFor 'userList'}}">
+							<i class="fa fa-th"></i> 
+							<span>Admin Users</span> 
+							<small class="badge pull-right bg-green">new</small>
+						</a>
+					</li>
+				{{/if}}
 				<li class="active">
 					{{> atNavButton}}
 				</li>	
