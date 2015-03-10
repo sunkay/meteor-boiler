@@ -6,21 +6,11 @@ Meteor.publish('posts', function(){
 // ---- Publishing a collection called userlist ------
 
 Meteor.publish('allusers', function(){
-	var self = this;
-	var handle = Meteor.users.find({}).observeChanges({
-		added: function (id, fields) {
-			self.added('userlist', id, fields);
-		}, 
-		changed: function (id, fields) {
-			self.changed('userlist', id, fields);
-		},
-		removed: function (id) {
-			self.removed('userslist', id);
-		}
-	});
-	self.ready();
+	var sub = this;
 
-	self.onStop(function () {
-		handle.stop();
-	});
+	var allusersCursor = Meteor.users.find({});
+	Mongo.Collection._publishCursor(allusersCursor, sub, 'allusers');
+
+	sub.ready();
+
 });
