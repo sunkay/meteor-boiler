@@ -14,14 +14,14 @@ Feature: Landing Page works as expeted
   Scenario: Homepage has 2 posts
     Given I am on the home page
     When I navigate to "/"
-    Then I should see 2 posts
+    Then I should see 10 posts
 
   Scenario: Add a new post
     Given I am logged in
     When I navigate to "newPost"
     And I submit a new post
     And I navigate to "/"
-    Then I should see 3 posts
+    Then I should see 10 posts
     And I should delete the new post
 
   Scenario: Edit a post
@@ -30,4 +30,9 @@ Feature: Landing Page works as expeted
     When I click on edit post
     And I edit a post
     Then I should see edited post
+
+  Scenario: Paginate should show right amount of posts
+    Given I am logged in
+    And I navigate to "posts/paginate/5"
+    Then I should see 5 posts
 

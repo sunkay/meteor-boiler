@@ -1,10 +1,4 @@
 
-Template.postsList.helpers({
-	posts: function(){
-		return Posts.find();
-	}
-});
-
 Template.postItem.events({
 	'click .deletePost': function(e){
 		e.preventDefault();

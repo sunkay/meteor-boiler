@@ -5,6 +5,18 @@
 		{{#each posts}}
 		{{> postItem}}
 		{{/each}}
+
+		{{#if nextPath}}
+			<div class="callout callout-info">
+				<h3>
+					<a class="load-more btn-block" href="{{nextPath}}">Load more</a>				
+				</h3>
+			</div>
+		{{else}}
+			{{#unless ready}}
+				{{> spinner}}
+			{{/unless}}
+		{{/if}}
 	</ul>
 	{{/contentHeader}}
 
@@ -21,7 +33,7 @@
 			<!-- General tools such as edit or delete-->
 			<div class="pull-right box-tools">
 
-			<a class="postPage btn btn-primary btn-sm pull-right"  style="	margin-right: 5px;" href="{{pathFor 'postPage'}}">
+				<a class="postPage btn btn-primary btn-sm pull-right"  style="	margin-right: 5px;" href="{{pathFor 'postPage'}}">
 					<i class="fa fa-info"></i>
 				</a>	
 

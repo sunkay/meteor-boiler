@@ -1,7 +1,17 @@
 //--- Publish posts ----
-Meteor.publish('posts', function(){ 
-	return Posts.find();
+Meteor.publish('posts', function(options){
+	check(options, {
+		limit: Number
+	});
+	return Posts.find({}, options);
 });
+
+Meteor.publish('singlePost', function(id){
+	check(id, String);
+
+	return Posts.find(id);
+});
+
 
 // ---- Publishing a collection called userlist ------
 

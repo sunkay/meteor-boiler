@@ -32,8 +32,8 @@
               //publicly visible fields like firstname goes here
               firstname: "dummy_FN",
               lastname: "dummy_LN"
-          }
-        });  
+            }
+          });  
         return userid;
       }
     }
@@ -46,12 +46,14 @@
           userId: user_id,
           createdAt: new Date()
         });
-        Posts.insert({
-          title: 'Meteor',
-          url: 'http://meteor.com',
-          userId: user_id,
-          createdAt: new Date()
-        });
+        for(var i=0; i<15; i++){
+          Posts.insert({
+            title: Fake.sentence(5),
+            url: 'http://'+Fake.word()+'.com',
+            userId: user_id,
+            createdAt: new Date()
+          });    
+        }
       }
     }
 
