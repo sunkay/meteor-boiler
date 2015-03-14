@@ -9,7 +9,7 @@ Template.postItem.events({
 	'click .deletePost': function(e){
 		e.preventDefault();
 
-		log.info("In Delete Post");
+		//log.info("In Delete Post");
 
 		var post = this;
 		bootbox.confirm("Are you sure?", function(result){

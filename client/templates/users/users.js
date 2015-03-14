@@ -9,7 +9,7 @@ Template.userItem.events({
 	'click .deleteUser': function(e){
 		e.preventDefault();
 
-		log.info("In Delete User");
+		//log.info("In Delete User");
 
 		var user = this;
 		bootbox.confirm("Are you sure?", function(result){
