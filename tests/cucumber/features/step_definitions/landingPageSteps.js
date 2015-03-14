@@ -79,10 +79,10 @@
         waitForVisible(".deletePost").
         click('.deletePost').
         pause(500).
-        saveScreenshot(process.env.PWD + '/delete1.png').
+        //saveScreenshot(process.env.PWD + '/delete1.png').
         click("[data-bb-handler='confirm']").
         pause(100).
-        saveScreenshot(process.env.PWD + '/delete2.png').
+        //saveScreenshot(process.env.PWD + '/delete2.png').
         pause(100);
 
 
@@ -117,7 +117,7 @@
       log.info("Then: I should see edited post");
 
       helper.world.browser.
-        saveScreenshot(process.env.PWD + '/edit.png').
+        //saveScreenshot(process.env.PWD + '/edit.png').
         waitForExist(".postItem").
         waitForVisible(".postItem").
         getText(".postItem", function(err, res){
