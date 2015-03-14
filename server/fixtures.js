@@ -40,16 +40,12 @@ if (Posts.find().count() === 0) {
     userId: user_id,
     createdAt: new Date()
   });
-  Posts.insert({
-    title: 'Meteor',
-    url: 'http://meteor.com',
-    userId: user_id,
-    createdAt: new Date()
-  });
-  Posts.insert({
-    title: 'The Meteor Book',
-    url: 'http://themeteorbook.com',
-    userId: 0,
-    createdAt: new Date()
-  }); 
+  for(var i=0; i<500; i++){
+    Posts.insert({
+      title: Fake.sentence(5),
+      url: 'http://'+Fake.word()+'.com',
+      userId: user_id,
+      createdAt: new Date()
+    });    
+  }
 }
