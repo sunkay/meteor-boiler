@@ -40,6 +40,7 @@
       function (numPosts, callback) {
         log.info("Then: I should see posts "+numPosts);
         helper.world.browser.
+        pause(250).
         elements(".postItem", function(err, res){
           assert.equal(res.value.length, numPosts);
           log.info(res.value.length);

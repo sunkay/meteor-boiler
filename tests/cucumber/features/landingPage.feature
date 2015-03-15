@@ -11,7 +11,7 @@ Feature: Landing Page works as expeted
     When I navigate to "/"
     Then I should see the title of "SunTheme"
 
-  Scenario: Homepage has 2 posts
+  Scenario: Homepage has 10 posts
     Given I am on the home page
     When I navigate to "/"
     Then I should see 10 posts
