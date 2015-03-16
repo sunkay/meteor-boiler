@@ -16,10 +16,15 @@ Meteor.publish('singlePost', function(id){
 
 // ---- Publishing a collection called userlist ------
 
-Meteor.publish('allusers', function(){
+Meteor.publish('allusers', function(options){
+	check(options, {
+		sort: Object,
+		limit: Number
+	});
+
 	var sub = this;
 
-	var allusersCursor = Meteor.users.find({});
+	var allusersCursor = Meteor.users.find({}, options);
 	Mongo.Collection._publishCursor(allusersCursor, sub, 'allusers');
 
 	sub.ready();
