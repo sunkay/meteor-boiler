@@ -5,6 +5,14 @@
 		{{#each allusers}}
 		{{> userItem}}
 		{{/each}}
+
+		{{#if nextPath}}
+			<div class="callout callout-info">
+				<h3>
+					<a class="load-more btn-block" href="{{nextPath}}">Load more</a>				
+				</h3>
+			</div>
+		{{/if}}
 	</ul>
 	{{/contentHeader}}
 
