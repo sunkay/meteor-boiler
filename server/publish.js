@@ -1,4 +1,4 @@
-//--- Publish posts ----
+//--- Publish posts + limit ----
 Meteor.publish('posts', function(options){
 	check(options, {
 		sort: Object,
@@ -15,6 +15,7 @@ Meteor.publish('singlePost', function(id){
 
 
 // ---- Publishing a collection called userlist ------
+// ---- Limits the number of users published ------
 
 Meteor.publish('allusers', function(options){
 	check(options, {
