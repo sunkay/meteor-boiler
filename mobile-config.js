@@ -17,9 +17,9 @@ App.icons({
   'ipad': 'resources/icons/boiler-wrench/ios/Icon-72.png',
   'ipad_2x': 'resources/icons/boiler-wrench/ios/Icon-72@2x.png',
 
-  'android_hdpi':'resources/icons/boiler-wrench/android/ic_launcher_boiler-wrench/drawable-hdpi/ic_launcher_boiler-wrench.png'
-  'android_ldpi':'resources/icons/boiler-wrench/android/ic_launcher_boiler-wrench/drawable-ldpi/ic_launcher_boiler-wrench.png'
-  'android_mdpi':'resources/icons/boiler-wrench/android/ic_launcher_boiler-wrench/drawable-mdpi/ic_launcher_boiler-wrench.png'
+  'android_hdpi':'resources/icons/boiler-wrench/android/ic_launcher_boiler-wrench/drawable-hdpi/ic_launcher_boiler-wrench.png',
+  'android_ldpi':'resources/icons/boiler-wrench/android/ic_launcher_boiler-wrench/drawable-ldpi/ic_launcher_boiler-wrench.png',
+  'android_mdpi':'resources/icons/boiler-wrench/android/ic_launcher_boiler-wrench/drawable-mdpi/ic_launcher_boiler-wrench.png',
   'android_xhdpi':'resources/icons/boiler-wrench/android/ic_launcher_boiler-wrench/drawable-xhdpi/ic_launcher_boiler-wrench.png'
 
 });
