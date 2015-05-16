@@ -9,7 +9,6 @@ mizzao:bootstrap-3
 underscore
 less
 iron:router
-natestrauser:font-awesome
 sacha:spin
 accounts-password
 xolvio:cucumber
@@ -29,3 +28,4 @@ accounts-ui
 accounts-meteor-developer
 bengott:avatar
 anti:fake
+fortawesome:fontawesome
