@@ -31,11 +31,11 @@
       });
 
     this.Then(/^I should see (\d+) posts$/, function (numPosts, callback) {
-      console.log("Then: I should see posts "+numPosts);
+      //console.log("Then: I should see posts "+numPosts);
       this.client.
         elements(".postItem", function(err, res){
           assert.equal(res.value.length, numPosts);
-          console.log(".. #numposts elements len: "+ res.value.length);
+          //console.log(".. #numposts elements len: "+ res.value.length);
         }).call(callback);
     });
 
